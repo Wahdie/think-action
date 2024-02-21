@@ -1,0 +1,61 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "anwar5@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:3000/auth/logout
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "anwar5@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:3000/auth/logout
+###
+GET http://localhost:3000/post/category
+
+###
+PUT http://localhost:3000/post/category/65cd4ca0b593cd52afe1bc69
+Content-Type: application/json
+
+{
+    
+}
+
+###
+POST http://localhost:3000/post/resolution
+Content-Type: application/json
+
+{
+    "resolution_name" : "Kurus 2",
+    "caption" : "Bersusah-susah dahulu bray",
+    "category" : "Fighting",
+    "dueDate" : "2024-3-4"
+}
+###
+POST http://localhost:3000/post/weekly-goal
+Content-Type: application/json
+
+{
+    "resolution_name" : "Kurus 3",
+    "goal_name" : "Makan 3 kali",
+    "caption" : "Bersusah-susah dahulu bray",
+    "category" : "Fighting",
+    "dueDate" : "2024-3-4"
+}
+###
+PUT http://localhost:3000/post/resolution/65d3f0b679c974d9653df740
+Content-Type: application/json
+
+{
+        "caption" : "Bersusah-susah dahulu bray"
+}
